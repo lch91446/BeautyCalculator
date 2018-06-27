@@ -1,0 +1,5 @@
+<view class="container" bindtap="handleRewardQr">
+    <image  class="reward-pic" src="../../asset/img/reward.png"></image>
+    <text class="text-title">赞赏是最好的支持</text>
+    <text class="text-tips">点击赞赏码识别并赞赏</text>
+</view>

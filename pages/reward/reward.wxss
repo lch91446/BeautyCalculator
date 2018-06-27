@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.reward-pic {
+    margin-top: 20vh;
+    width: 400rpx;
+    height: 400rpx;
+}
+.text-title {
+    font-size: 30rpx;
+    color: #333;
+    margin-top: 40rpx;
+}
+.text-tips {
+    font-size: 20rpx;
+    color: #ccc;
+    margin-top: 40rpx;
+}

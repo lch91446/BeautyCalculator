@@ -1,0 +1,23 @@
+<view class="container">
+    <view class="pic-info" style="width: {{ picSelfAdaptWidth }}vw; height: {{ picSelfAdaptHeight }}vh">
+        <image wx:if="{{ !testPicFile }}" class="pic-none" src="../../asset/icon/pic_bg.png"></image>
+        <image wx:else class="pic-inner" src="{{ testPicFile }}"></image>
+    </view>
+    <view wx:if="{{ testPicFile && !testPicResult }}" class="close" bindtap="handleCancelPic">
+        <i class="arrow">×</i>
+    </view>
+    <view class="pic-result" wx:if="{{ testPicResult }}">
+        <view class="score-box"><i class="icon-love"></i> 颜值 <span class="score">{{ testPicResult.beauty }}分</span>, 击败 {{ testPicResult.defeat}}% 用户</view>
+        <view class="score-ext">
+            <span wx:if="{{ userInfo }}">用户: {{userInfo.nickName}}</span> 
+            <span>性别: <i class="icon-{{ testPicResult.gender }}"></i></span>
+            <span>年龄: {{ testPicResult.age }}</span>
+        </view>
+    </view>
+    <view>
+        <button wx:if="{{ !testPicFile }}" class="btn btn-select" bindtap="handleUploadPic">选择照片/拍照</button>
+        <button wx:if="{{ testPicFile && !testPicResult }}" class="btn btn-compute" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">计算颜值</button>
+        <button open-type="share" wx:if="{{ testPicResult }}" class="btn btn-share">邀请好友来玩</button>
+        <button wx:if="{{ testPicResult }}" class="btn btn-bottom" bindtap="handlePlayAgain">再试一次</button>
+    </view>
+</view>

@@ -1,0 +1,91 @@
+page {
+    background-color: #ff8c00;
+}
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.pic-info {
+    margin-top: 6vh;
+    border: solid #fff;
+    border-width: 30rpx 30rpx 30rpx 30rpx;
+    box-shadow: 10rpx 10rpx 15rpx #333;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 20rpx;
+}
+.btn {
+    background: #dd5900;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.btn-select {
+    margin-top: 80rpx;
+}
+.btn-compute {
+    margin-top: 50rpx;
+    margin-bottom: 50rpx
+}
+.btn-share {
+    margin-top: 50rpx;
+}
+.btn-bottom {
+    margin-top: 30rpx;
+    margin-bottom: 50rpx;
+}
+.pic-none {
+    width: 90%;
+    height: 90%;
+}
+.pic-inner {
+    width: 100%;
+    height: 100%;
+}
+.pic-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50rpx;
+    color: #fff;
+}
+.pic-result .score-box{
+    font-size: 34rpx;
+}
+.pic-result .score {
+    font-size: 50rpx;
+}
+.pic-result .score-ext {
+    margin-top: 30rpx;
+    font-size: 28rpx;
+}
+.pic-result .score-ext span {
+    margin-right: 30rpx;
+}
+.pic-result .score-box {
+    background: #fff;
+    padding: 10rpx 20rpx;
+    border-radius: 20rpx;
+    color: #dd5900;
+}
+.close {
+    position: absolute;
+    top: 7vh;
+    right: 12vw;
+}
+.close .arrow {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 38rpx;
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 25rpx;
+    background: #dd5900;
+    color: #fff;
+}
